@@ -1,0 +1,41 @@
+git >> Version Control
+
+    v1 
+    v2
+    v3
+new v4
+
+
+>> It is distributed(on  cloud)
+>> collaboration
+
+>> Tracking   changes
+>> Recovery
+
+https://git.scm.com/download
+
+gitHub
+BitBucket 
+GitLabs
+GitPad
+
+>> For 1st time need to configure github in our system 
+
+git config --global user.name"Princeyadav7463"
+
+git config --global user.email"princeyadav875791@gmail.com"
+
+git config --global color.ui auto
+
+Mandatory Commands:
+>> git init
+>> git remote add origin https....... paste
+
+then open terminal 
+>> git pull roigin main
+
+git status
+
+git add .
+git statusgit commit m "Commit Message"
+git push
