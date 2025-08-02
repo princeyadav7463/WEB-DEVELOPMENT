@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form in HEML</title>
+  </head>
+  <body>
+    <h2>Form in HTML</h2>
+    <form action="images.html">
+      <label for="fname">First Name :</label>
+      <input
+        id="fname"
+        type="text"
+        minlength="5"
+        maxlength="20"
+        required
+        placeholder="First Name :"
+      />
+      <label for="mname">Middle Name</label>
+      <input
+        id="mname"
+        type="text"
+        minlength="10"
+        maxlength="15"
+        placeholder=" Middle Name"
+      />
+      <label for="lname">Last Name</label>
+      <input
+        id="lname"
+        type="text"
+        minlength="10"
+        maxlength="15"
+        placeholder=" Last Name"
+      />
+      <br /><br />
+      <label for="">Age:</label>
+      <input type="number" />
+      <label for="">Email:</label>
+      <input type="email" />
+      <br /><br />
+      <label for="">Date of Joining</label>
+      <input type="date" />
+      <br /><br /><br />
+      <label for="">Password</label>
+      <input type="password" />
+      <br /><br />
+      <p>Enter Your Shirt Size</p>
+      <input type="radio" name="shirtSize" id="small" />
+      <label for="small">Small Size</label>
+      <input type="radio" name="shirtSize" id="middle" />
+      <label for="middle">Middle Size</label>
+      <input type="radio" name="shirtSize" id="middle" />
+      <label for="middle">Large Size</label>
+      <br /><br />
+      <br />
+      <label for="color">Please Select Your Shirt Color </label>
+      <input type="color" />
+      <br />
+      <br />
+      <br />
+      <p>select the known language</p>
+      <input type="checkbox" name="lang" id="English" />
+      <label for="English">English</label>
+      <input type="checkbox" name="lang" id="Hindi" />
+      <label for="Hindi">Hindi</label>
+      <input type="checkbox" name="lang" id="Resional" />
+      <label for="Resional">Resional L</label>
+      <br /><br />
+      <br />
+      <label for="paymentOption">Please Select a Payment method:</label>
+      <select name="payment" id="paymentOption">
+        <option value="gpay">Gpay</option>
+        <option value="ppay">P_pay</option>
+        <option value="upi">UPI</option>
+        <option value="cod">COD</option>
+        <option value="debit">debit_c</option>
+      </select>
+      <br />
+      <br />
+      <br />
+      <label for="">Please Provide Your Valuable Feedback</label>
+      <textarea
+        name="cmt"
+        id="cmts"
+        rows="18"
+        cols="125"
+        placeholder="pls enter your feedbacck"
+      ></textarea>
+      <br />
+      <br /><br />
+      <input type="reset" />
+      <input type="submit" />
+    </form>
+  </body>
+</html>
