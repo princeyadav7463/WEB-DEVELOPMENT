@@ -39,3 +39,148 @@ git status
 git add .
 git statusgit commit m "Commit Message"
 git push
+
+CSS Topics
+1. Css Selectors
+Selectors are patterns used to select elements for styling.
+      * – Universal selector
+      element – Tag selector (p, h1)  
+      .class – Class selector
+      #id – ID selector
+      element1, element2 – Group selector
+      element1 element2 – Descendant selector
+      element > element – Child selector
+      element + element – Adjacent sibling
+      element ~ element – General sibling
+      Attribute selectors: [type="text"], [href^="https"]
+2. Colors in Css
+Used to set background, border, or font color.
+        Name: red, blue
+        Hex: #ff0000
+        RGB: rgb(255, 0, 0)
+        RGBA: rgba(255, 0, 0, 0.5) (includes transparency)
+        HSL/HSLA: hsl(0, 100%, 50%)
+3. Units in Css
+Used to define size, spacing, and positioning.
+     Absolute: px, cm, mm, in
+     Relative:
+        % – Relative to parent
+        em – Relative to font-size of parent
+        rem – Relative to root font-size
+        vh, vw – Viewport height/width   
+4. Box Model in css
+Every HTML element is a box composed of:
+        Content → The actual content
+        Padding → Space inside the border
+        Border → Around the padding
+        Margin → Space outside the border 
+        Example :- box-sizing: border-box;
+
+5. Texts and Fonts in css
+Used to style typography.
+        font-family, font-size, font-weight, font-style
+        text-align, text-decoration, text-transform
+        line-height, letter-spacing, word-spacing
+        Google Fonts can be imported for custom fonts.
+6. Display in css
+Controls how elements are displayed.
+        block – Takes full width
+        inline – Takes only content width
+        inline-block – Like inline but allows width/height
+        none – Hides the element
+        flex, grid – Modern layouts
+
+7. Positions in css
+Positions elements in the document.
+        static – Default
+        relative – Relative to itself
+        absolute – Relative to nearest positioned ancestor
+        fixed – Relative to viewport
+        sticky – Toggles between relative and fixed based on scroll
+
+8. Overflow, Float and Clear in css
+Overflow controls content spilling:
+        visible, hidden, scroll, auto
+        Float positions element left or right:
+        float: left;
+        Clear stops floating effect:
+        clear: both;
+9. FlexBox in css
+One-dimensional layout system (row or column).
+        display: flex;
+        justify-content: space-between; /* Main axis */
+        align-items: center; /* Cross axis */
+        flex-direction: row | column;
+        flex-wrap: wrap;
+
+10. Grid in css
+Two-dimensional layout system.
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+        gap: 10px;
+
+11. Grid portfolio in css
+A layout for image or card galleries.
+        .grid-container {
+          display: grid;
+          grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+          gap: 20px;
+        }
+
+12. Media Quesries in css
+Used for responsive design.
+        @media (max-width: 768px) {
+          body {
+            background: lightblue;
+          }
+        }
+Breakpoints commonly used:
+        480px (mobile)
+        768px (tablet)
+        1024px (laptop)
+13. Css Variables
+Custom properties reusable across the file.
+        :root {
+          --main-color: #ff5733;
+        }
+
+        h1 {
+          color: var(--main-color);
+        }
+
+14. Transform in css
+Applies 2D/3D transformation.
+        transform: translateX(50px);
+        transform: scale(1.2);
+        transform: rotate(45deg);
+        transform: skewX(20deg);
+
+15. Tranistion in css
+Smooth change between styles.
+        transition: all 0.3s ease-in-out;
+Used with hover, focus, etc.
+        .button:hover {
+          background-color: blue;
+        }
+
+16 key frame Animations
+Define intermediate steps of animation.
+        @keyframes slideIn {
+          from {
+            transform: translateX(-100%);
+          }
+          to {
+            transform: translateX(0);
+          }
+        }
+
+        .box {
+          animation: slideIn 1s ease-in-out forwards;
+        }
+Animation properties:    
+        animation-name
+        animation-duration
+        animation-timing-function
+        animation-iteration-count
+        animation-delay
