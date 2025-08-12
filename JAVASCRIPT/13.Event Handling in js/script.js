@@ -6,3 +6,4 @@
 function onclickFun() {
   console.log("This box has been clicked");
 }
+console.log("Prince Yadav");
