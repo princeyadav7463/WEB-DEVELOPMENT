@@ -8,16 +8,21 @@
   </head>
   <body>
     <h2>Event Listerns:</h2>
-    <div class="container">
+    <div class="container" id="cont">
       <div class="box" id="box-1">box-1</div>
-      <div class="box" id="box-2" onclick="onclickFun()">box-2</div>
+      <div class="box" id="box-2" onmousemove="onclickFun()">box-2</div>
       <div class="box" id="box-3">box-3</div>
       <div class="box" id="box-4">box-4</div>
       <div class="box" id="box-5">box-5</div>
     </div>
     <br /><br /><br />
     <form action="">
-      <input type="text" />
+      <input
+        type="text"
+        onkeypress="keyPressEvent()"
+        onkeydown="onkeydown()"
+        onkeyup="onkeyup"
+      />
     </form>
   </body>
   <script src="script.js"></script>
