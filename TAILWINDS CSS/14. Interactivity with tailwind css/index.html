@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interactivity with tailwind css</title>
+    <link rel="stylesheet" href="output.css" />
+  </head>
+  <body>
+    <button class="bg-blue-400 p-3 m-3 rounded-md text-white block">
+      Register - Simple Btn
+    </button>
+    <button
+      class="bg-blue-400 p-3 m-3 rounded-md text-white block hover:bg-blue-700 hover:text-yellow-400"
+    >
+      Register - Hover Btn
+    </button>
+    <button
+      class="bg-blue-400 p-3 m-3 rounded-md text-white block focus:bg-yellow-400"
+    >
+      Register - Focus Btn
+    </button>
+
+    <button
+      class="bg-blue-400 p-3 m-3 rounded-md text-white block active:bg-green-400"
+    >
+      Register - Active Btn
+    </button>
+
+    <button
+      class="bg-blue-400 p-3 m-3 rounded-md text-white block hover:bg-blue-700 focus:bg-yellow-400 active:bg-green-400 focus:bg-yellow-400"
+    >
+      Register
+    </button>
+
+    <div class="group">
+      <p class="group-hover:text-yellow-400">
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+      </p>
+      <a href="#" class="group-hover:text-green-400 m-3 p-3">Click Me</a>
+    </div>
+  </body>
+</html>
