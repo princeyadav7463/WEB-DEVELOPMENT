@@ -1,10 +1,12 @@
-
+import DummyCompo from "./DummyCompo";
 function App() {
- 
-
   return (
-   <h1>Hello World | vite</h1>
-  )
+    <div>
+      <DummyCompo />
+      <h1>Hello World | Vite</h1>
+      <p>Hey its a paragraph demo </p>
+    </div>
+  );
 }
 
-export default App
+export default App;
